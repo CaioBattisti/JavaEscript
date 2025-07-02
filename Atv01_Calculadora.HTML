@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        function Soma(){
+            var num1 = prompt("Digite um número:");
+            var num2 = prompt("Digite outro número:");
+            if (num1 != null && num2 != null) {
+                var resultado = Number(num1) + Number(num2);
+                document.getElementById("demo").innerHTML = "Sua soma é: " + resultado;
+            }
+        }
+
+        function Subtracao(){
+            var num1 = prompt("Digite um número:");
+            var num2 = prompt("Digite outro número:");
+            if (num1 != null && num2 != null) {
+                var resultado = Number(num1) - Number(num2);
+                document.getElementById("demo").innerHTML = "Sua subtração é: " + resultado;
+            }
+        }
+
+        function Divisao(){
+            var num1 = prompt("Digite um número:");
+            var num2 = prompt("Digite outro número:");
+            if (num1 != null && num2 != null) {
+                var resultado = Number(num1) / Number(num2);
+                document.getElementById("demo").innerHTML = "Sua divisão é: " + resultado;
+            }
+        }
+
+        function Multiplicacao(){
+            var num1 = prompt("Digite um número:");
+            var num2 = prompt("Digite outro número:");
+            if (num1 != null && num2 != null) {
+                var resultado = Number(num1) * Number(num2);
+                document.getElementById("demo").innerHTML = "Sua multiplicação é: " + resultado;
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Escolha uma Operação:</p>
+    <p><button onclick="Soma()">Somar</button></p>
+    <p><button onclick="Subtracao()">Subtrair</button></p>
+    <p><button onclick="Multiplicacao()">Multiplicar</button></p>
+    <p><button onclick="Divisao()">Dividir</button></p>
+    <p id="demo"></p>
+</body>
+</html>

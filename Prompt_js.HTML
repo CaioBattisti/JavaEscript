@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        function MyFunction(){
+            var x;
+            var idade=prompt("Digite sua Idade:")
+            if (idade!=null) {
+                x="Sua Idade é de:\n" + idade + "\nAnos.";
+                document.getElementById("demo").innerHTML=x;
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Clique para Exibir</p>
+    <button onclick="MyFunction()">Clique Aqui</button>
+    <p id="demo"></p>
+</body>
+</html>
