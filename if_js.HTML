@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        function funcao1() {
+            var x;
+            var r=confirm("Escolha um valor!")
+            if (r==true) {x="Você Pressionou OK!";}
+            else {x="Você pressionou Cancelar";}
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+</head>
+<body>
+    <p>Clique no botão para exibir a caixa de confirmação.</p>
+    <button onclick="funcao1()">Clique Aqui</button>
+    <p id="demo"></p>
+</body>
+</html>
