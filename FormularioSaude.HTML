@@ -1,0 +1,71 @@
+<!-- Codigo HTML do Formulario-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+    <title>Formulario de Saude</title>
+    <!-- Escreva o CSS ou Utilize Bootstrap No Código Abaixo-->
+    <script src="Formulario.js"></script>
+
+
+
+</head>
+<body>
+    <form action="#" id="Formulario" onsubmit="return valida()" method="post">
+        <!--Dados Pessoais-->
+        <fieldset>
+            <div>
+                <h3>Insserir Dados dos Pacientes</h3>
+            </div>
+            <div id="linha">
+                <hr>
+            </div>
+            <br>
+            <div id="autor">
+                <h2> Caio Luiz Battisti</h2>
+            </div>
+            <!-- Nome-->
+             <table border="0" cellpacing="5">
+                <tr>
+                    <td align="right">
+                        <label for="Nome">Nome:</label>
+                    </td>
+                    <td align="right">
+                        <input class="tamanho" type="text" name="nome" size="15" required>
+                    </td>
+                </tr>
+
+                <tr> <!--Posto de Saude-->
+                    <td align="right">
+                        <label for="Posto de Saude">Posto de Saude:</label>
+                    </td>
+                    <td align="right">
+                        <input class="tamanho2" type="text" name="Posto" size="15" maxlength="15">
+                    </td>
+                </tr>
+
+                <tr> <!--Diabetes-->
+                    <td align="right">
+                        <label for="Tipodiabete">Tipo Diabetes:</label>
+                    </td>
+                    <td align="right">
+                        <input class="tamanho" type="text" name="diabetes" required>
+                    </td>
+                </tr>
+
+                <tr> <!--Cartão SUS-->
+                    <td align="right">
+                        <label for="CartaoSUS">Cartão SUS:</label>
+                    </td>
+                    <td align="right">
+                        <input type="text" required onkeypress="mascara(this, CartaoSUS)" maxlength="14">
+                    </td>
+                </tr>
+             </table>
+        </fieldset>
+
+
+
+    </form>
+</body>
+</html>
