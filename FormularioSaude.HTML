@@ -28,7 +28,7 @@
              <table border="0" cellpacing="5">
                 <tr>
                     <td align="right">
-                        <label for="Nome">Nome:</label>
+                        <label for="nome">Nome:</label>
                     </td>
                     <td align="right">
                         <input class="tamanho" type="text" name="nome" size="15" required>
@@ -37,7 +37,7 @@
 
                 <tr> <!--Posto de Saude-->
                     <td align="right">
-                        <label for="Posto de Saude">Posto de Saude:</label>
+                        <label for="posto de saude">Posto de Saude:</label>
                     </td>
                     <td align="right">
                         <input class="tamanho2" type="text" name="Posto" size="15" maxlength="15">
@@ -46,7 +46,7 @@
 
                 <tr> <!--Diabetes-->
                     <td align="right">
-                        <label for="Tipodiabete">Tipo Diabetes:</label>
+                        <label for="tipodiabete">Tipo Diabetes:</label>
                     </td>
                     <td align="right">
                         <input class="tamanho" type="text" name="diabetes" required>
@@ -55,12 +55,83 @@
 
                 <tr> <!--Cartão SUS-->
                     <td align="right">
-                        <label for="CartaoSUS">Cartão SUS:</label>
+                        <label for="cartaosus">Cartão SUS:</label>
                     </td>
                     <td align="right">
                         <input type="text" required onkeypress="mascara(this, CartaoSUS)" maxlength="14">
                     </td>
                 </tr>
+
+                <tr> <!--Ano Inicio da diabetes-->
+                    <td align="right">
+                        <label for="anodiabetes">Ano de Inicio do Diabetes:</label>
+                    </td>
+                    <td>
+                        <input type="text" required onkeypress="mascara(this, Data)" maxlength="10">
+                    </td>
+                </tr>
+
+                <tr> <!--Data Nascimento-->
+                    <td align="right">
+                        <label for="dtnascimento">Data de Nascimento:</label>
+                    </td>
+                    <td>
+                        <label for="">
+                            <input type="text" required onkeypress="mascara(this, Data)" maxlength="10"> (DD/MM/AAAA)
+                        </label>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+                <tr><!--Sexo-->
+                    <td align="right">
+                        <label for="sexo">Sexo:</label>
+                    </td>
+                    <td>
+                        <input type="radio" value="" name="sexo" required> Masc.
+                        <input type="radio" value="" name="sexo" required> Fem.
+                    </td>
+                </tr>
+
+                <tr> <!--RG e SSP-->
+                    <td align="right">
+                        <label for="rg">RG:</label>
+                    </td>
+                    <td>
+                        <input type="text" required onkeypress="mascara(this, RGeCPF)" maxlength="14">
+                    </td>
+
+                    <td>SSP:
+                        <select id="estado" name="estado" class="estados">
+                            <option value="RS">RS</option>
+                            <option value="SC">SC</option>
+                            <option value="PR">PR</option>
+                            <option value="SP">RP</option>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <tr> <!--Telefone-->
+                    <td align="right">
+                        <label for="telefone">Telefone:</label>
+                    </td>
+                    <td>
+                        <input type="text" onkeypress="mascara(this, Telefone)" maxlength="15">
+                    </td>
+                </tr>
+
+                <tr> <!--Profissao-->
+                    <td align="right">
+                        <label for="profissao">Profissão:</label>
+                    </td>
+                    <td>
+                        <input class="tamanho" type="text" name="profissao">
+                    </td>
+                </tr>
+
+                
              </table>
         </fieldset>
 
