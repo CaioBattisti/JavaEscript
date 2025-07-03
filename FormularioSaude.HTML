@@ -1,15 +1,14 @@
 <!-- Codigo HTML do Formulario-->
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta content="text/html"; charset="utf-8" http-equiv="Content-Type">
+    <meta content="text/html" ; charset="utf-8" http-equiv="Content-Type">
     <title>Formulario de Saude</title>
     <!-- Escreva o CSS ou Utilize Bootstrap No Código Abaixo-->
     <script src="Formulario.js"></script>
-
-
-
 </head>
+
 <body>
     <form action="#" id="Formulario" onsubmit="return valida()" method="post">
         <!--Dados Pessoais-->
@@ -25,7 +24,7 @@
                 <h2> Caio Luiz Battisti</h2>
             </div>
             <!-- Nome-->
-             <table border="0" cellpacing="5">
+            <table border="0" cellpacing="5">
                 <tr>
                     <td align="right">
                         <label for="nome">Nome:</label>
@@ -131,12 +130,72 @@
                     </td>
                 </tr>
 
-                
-             </table>
+                <tr> <!--Endereco-->
+                    <td align="right">
+                        <label for="endereco">Endereço:</label>
+                    </td>
+                    <td>
+                        <input class="tamanho" type="text" name="endereco" id="" required>
+                    </td>
+                </tr>
+
+                <tr> <!--Bairro-->
+                    <td align="right">
+                        <label for="bairro">Bairro:</label>
+                    </td>
+                    <td>
+                        <input class="tamanho" type="text" name="bairro" id="" required>
+                    </td>
+                </tr>
+
+                <tr> <!--Cidade-->
+                    <td align="right">
+                        <label for="cidade">Cidade:</label>
+                    </td>
+                    <td>
+                        <input class="tamanho2" type="text" name="cidade" id="" required>
+                    </td>
+                </tr>
+
+                <tr> <!--CEP-->
+                    <td align="right">
+                        <label for="cep">CEP:</label>
+                    </td>
+                    <td>
+                        <input type="text" onkeypress="mascara(this,cep)" maxlength="10">
+
+
+                    <td align="right">UF:
+                        <select id="estado" name="estado" class="estados">
+                            <option value="RS">RS</option>
+                            <option value="SC">SC</option>
+                            <option value="PR">PR</option>
+                            <option value="SP">RP</option>
+                        </select>
+                    </td>
+                    </td>
+                </tr>
+
+                <tr> <!--Pais-->
+                    <td align="right">
+                        <label for="pais">País:</label>
+                    </td>
+                    <td>
+                        <input class="tamanho2" type="text" name="pais" id="" value="Brasil" required>
+                    </td>
+                </tr>
+                <br>
+                <br>
+
+                <tr>
+                    <td class="botao">
+                        <input class="btn1" type="submit" onclick="return validar" value="Enviar">
+                        <input class="btn2" type="button" value="Cancelar">
+                    </td>
+                </tr>
+            </table>
         </fieldset>
-
-
-
     </form>
 </body>
+
 </html>
