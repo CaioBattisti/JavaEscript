@@ -9,9 +9,9 @@ function mouseOut()
 
 function mouseOver2()
 {
-    document.imagem.src="image/Atv02_jojoBizarreAdventure.jpg";
+    document.imagem2.src="image/Atv02_jojoBizarreAdventure.jpg";
 }
 function mouseOut2()
 {
-    document.imagem.src="image/Atv02_AttackTitan.jpg";
+    document.imagem2.src="image/Atv02_AttackTitan.jpg";
 }
