@@ -1,11 +1,11 @@
-/* Reseta margens e paddings */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo geral do body */
+/* Corpo */
 body {
     font-family: Arial, sans-serif;
     background-color: #f1f1f1;
@@ -41,7 +41,7 @@ h2, h3 {
 }
 
 #autor h2 {
-    font-size: 1.2;
+    font-size: 1.2em;
     color: #555;
 }
 
@@ -58,22 +58,13 @@ label {
     width: 150px;
 }
 
-/* Inputs e selects */
+/* Inputs e selects - todos com mesmo tamanho */
 input[type="text"],
 select {
-    width: 200px;
+    width: 250px;
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-/* Inputs com classes tamanho */
-input.tamanho {
-    width: 250px;
-}
-
-input.tamanho2 {
-    width: 180px;
 }
 
 /* Radios */
