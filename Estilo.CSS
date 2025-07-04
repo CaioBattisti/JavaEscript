@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f1f1f1;
-    padding: 5px;
+    padding: 20px;
 }
 
 /* Formulário */
@@ -17,14 +17,15 @@ form {
     background-color: #fff;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
     max-width: 700px;
     margin: 0 auto;
 }
 
 /* Fieldset */
 fieldset {
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     padding: 20px;
     border-radius: 6px;
 }
@@ -61,10 +62,18 @@ label {
 /* Inputs e selects - todos com mesmo tamanho */
 input[type="text"],
 select {
-    width: 250px;
+    width: 300px;              
     padding: 6px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+/* Foco nos inputs */
+input[type="text"]:focus,
+select:focus {
+    border-color: #4CAF50;
+    outline: none;
 }
 
 /* Radios */
